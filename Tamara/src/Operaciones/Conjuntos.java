@@ -66,7 +66,7 @@ public class Conjuntos {
 				inter[ais] = a[i];
 				ais++;
 			}
-			
+			//f
 	}
 		return inter;	
 	}
