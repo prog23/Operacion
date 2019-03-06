@@ -53,11 +53,23 @@ public class Conjuntos {
 	}
 	
 	private static int[] Interseccion(int[] a, int[] b) {
-		//en proceso
-		return b;
-		
+		int ai = 0;
+		for(int i = 0; i<a.length;i++) {
+			if(existe(b, a[i])) {
+				ai++;
+			}
+		}
+		int[]inter = new int[ai];
+		int ais=0;
+		for(int i = 0; i<a.length;i++) {
+			if(existe(b, a[i])) {
+				inter[ais] = a[i];
+				ais++;
+			}
+			
 	}
-
+		return inter;	
+	}
 	private static int[] Union(int[] a, int[] b) {
 		int []u=new int[a.length+b.length];
 		for(int i = 0; i<a.length;i++) {
