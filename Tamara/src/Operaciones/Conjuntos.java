@@ -7,30 +7,32 @@ import java.util.Scanner;
 public class Conjuntos {
 	public static void main(String[] args) {
 	
-	int elemento;	
+	int a;	
+	int b;
 	
 	List<Integer> lista = new ArrayList<Integer>();
 	
 	Scanner sc = new Scanner(System.in);
 	
 	System.out.println("Numero de elementos del vector A");
-	elemento = sc.nextInt();
+	a = sc.nextInt();
 	
-	for (int i=0; i<elemento; i++) {
-		elemento = sc.nextInt();
-		if(!lista.contains(elemento)) {
-			lista.add(elemento);
+	for (int i=0; i<a; i++) {
+		a = sc.nextInt();
+		if(!lista.contains(a)) {
+			lista.add(a);
 		}
+		
 		
 	}
 	
 	System.out.println("Numero de elementos del vector B");
-	elemento = sc.nextInt();
+	b = sc.nextInt();
 	
-	for (int i=0; i<elemento; i++) {
-		elemento = sc.nextInt();
-		if(!lista.contains(elemento)) {
-			lista.add(elemento);
+	for (int i=0; i<b; i++) {
+		b = sc.nextInt();
+		if(!lista.contains(b)) {
+			lista.add(b);
 		}
 		
 	}
@@ -38,7 +40,8 @@ public class Conjuntos {
 	System.out.println("Union");
 	
 	for(Integer k : lista) {
-		System.out.print(k);
+		System.out.print(k+" ");
+		
 	}
 	
 	
